@@ -8,7 +8,7 @@ export default function App() {
   const [contacts, setContacts] = useState(() => {
     const saved = localStorage.getItem('contacts');
     const initialValue = JSON.parse(saved);
-    return initialValue || '';
+    return initialValue || [];
   });
   const [filter, setFilter] = useState('');
 
